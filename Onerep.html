@@ -1,0 +1,62 @@
+<html>
+  <h1 align="center">The Mecca </h1>
+    <body>
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="Onerep.html">One Rep</a></li>
+          <li><a href="Generator.html">Workout Generator</a></li>
+          <li><a href="Workout.html">Workout</a></li>
+        </ul>
+      </body>
+<script>
+  function calculateMAX(){
+    var weight = document.getElementById("weight").int;
+    var reps = document.getElementById("reps").int;
+    var weight = parsefloat(weight)
+    var newmax = document.getElementById("newmax");
+
+    var percent = (100-(2.5*reps))/100;
+
+    var onerep = weight/percent;
+    newonerep.innerHTML = onerep;
+  }
+</script>
+<form>
+    Reps:<br>
+    <input type="int" name="reps">
+    <br>
+    Weight:<br>
+    <input type="int" name="weight" >
+    <br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  <style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}   
+</style>
+<form>
+  <div id = "Calculate" onclick="calculateMAX()">Calculate</div>
+  <div id = "newmax"></div>
+</form>
+</html>
