@@ -1,6 +1,6 @@
 p{
-  background-color: #333;  
-  color: White;
+  background-color: white;  
+  color: black;
 
 }
 
@@ -39,12 +39,12 @@ li a:hover {
 }
 
 html{
-    background-color: #333;
+    background-color: white;
 }
 
 .carousel-inner{
   height: 400px;
-  background-color: red;
+  background-color:red;
 }
 img .d-block{
   height: 100%;
@@ -54,6 +54,6 @@ img .d-block{
 }
 
 h1{
-  background-color:#333;
-  color:white
+  background-color:white;
+  color:black
 }
